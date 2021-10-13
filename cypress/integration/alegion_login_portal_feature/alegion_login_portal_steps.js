@@ -1,5 +1,4 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
-import { When } from "cypress-cucumber-preprocessor/steps";
 
 const url = 'https://portal.alegion.com/'
 
@@ -20,14 +19,6 @@ When('I entered an invalid user cred of email {string} and password {string}', (
 
 When('I click on {string} link', (link_text) => {
 	cy.get('a[href="'+link_text+'"]')
-	.click()
-})
-
-When('I click on "I am human" checkbox', () => {
-	//cy.get('iframe[title="widget containing checkbox for hCaptcha security challenge"]')
-	cy.frameLoaded('iframe[title="widget containing checkbox for hCaptcha security challenge"]')
-	.iframe('[title="widget containing checkbox for hCaptcha security challenge"]')
-	.find('div#checkbox')
 	.click()
 })
 
