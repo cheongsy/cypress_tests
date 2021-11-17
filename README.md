@@ -2,15 +2,17 @@
 
 ## Pre-requisites
 1. Install Node.js. Check the option to install the necessary tools which includes Chocolatey, python package, etc.
-2. Install Cypress testing tool.
-
 
 ## How to run tests
 1. Navigate to the project path. (E.g. C:\MyGitRepositories\cypress_tests)
-2. Run this command: &"$(npm bin)\cypress" open
-3. Click on the alegion login portal feature to run the test.
+2. To reinstall packages, run this command: npm install
+3. To open cypress test runner, run this command:
+* Powershell terminal: &"$(npm bin)\cypress" open
+* VS Code terminal: $(npm bin)/cypress open
+4. Click on the alegion login portal feature to run the test.
 
 
 ## How to run tests in headless mode
 1. Navigate to the project path. (E.g. C:\MyGitRepositories\cypress_tests)
-2. Run this command: &"$(npm bin)\cypress" run --spec **/*.feature
+2. Run this command: 
+* Powershell terminal: &"$(npm bin)\cypress" run --spec **/*.feature
